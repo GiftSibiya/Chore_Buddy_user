@@ -1,3 +1,4 @@
+import 'package:chore_buddy_user/pages/Welcome/intro.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,15 +8,8 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("This is main app"),
-        ),
-      ),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: WelcomePage());
   }
 }
