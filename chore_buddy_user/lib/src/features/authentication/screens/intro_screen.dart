@@ -1,3 +1,4 @@
+import 'package:chore_buddy_user/src/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 
 class IntroScreen extends StatelessWidget {
@@ -6,7 +7,9 @@ class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(child: Text("Chore Buddy")),
+      body: Center(
+          child: SizedBox(
+              height: 220, child: Image(image: AssetImage(splashImage)))),
     );
   }
 }
